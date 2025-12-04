@@ -1,78 +1,93 @@
 # SCT_CT_4
 RECORD keylogger && keystrokes
 
+---
 
-#  Keyboard Input Logger (Educational Use Only)
+# 📘 **Keystroke Logger (Safe Version)**
 
-This project demonstrates how to capture and log keyboard input **safely and ethically** for educational purposes.
-The program records keystrokes **only within the application itself**, not system-wide, and saves them to a log file.
+A simple and safe Python program that captures and logs keystrokes **only while the program window is active**.
+This project is intended **only for educational** where demonstrating keystroke handling is required.
 
-> ⚠️ **Disclaimer:**
-> This project is strictly for learning keyboard event handling and should **NOT** be used for creating malicious keyloggers.
-> Always ensure user consent and follow all legal and ethical guidelines.
+⚠️ **This is NOT a background/system-wide keylogger.**
+It does **not** run hidden, does **not** capture sensitive data, and works only when the program is in focus.
 
 ---
 
-## 📌 Features
+## 🚀 Features
 
-* Logs keys pressed during program execution
-* Stores each key in a text file (`input_log.txt`)
-* Runs transparently (no background or hidden behavior)
-* Intended for learning keyboard event handling in Python
+* Logs keystrokes in real-time
+* Records timestamps for each key press
+* Saves logs to a text file (`key_log.txt`)
+* Stops on **ESC** key
+* Clear and beginner-friendly code
+* Safe and ethical key-capture implementation
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
-├── input_log.txt        # File where keys are saved
-├── key_input_logger.py  # Main program
-└── README.md            # Project documentation
+project-folder/
+│
+├── keylogger.py       # Main program with timestamp logging
+└── key_log.txt        # Output log file (auto-created)
 ```
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Requirements
 
-* **Python 3.x**
-* **keyboard** library for key event capture
+| Package    | Purpose                    |
+| ---------- | -------------------------- |
+| `keyboard` | Capturing keystroke events |
 
----
-
-## ▶️ How to Run the Program
-
-### 1. Install dependencies
+Install the required dependency:
 
 ```bash
 pip install keyboard
 ```
 
-### 2. Run the script
+> **Note:** On Linux, this module may require root permissions.
+
+---
+
+## 📌 Usage
+
+Run the script:
 
 ```bash
-python key_input_logger.py
+python keylogger.py
 ```
 
-### 3. Start typing
-
-Every key you press **within the running program** will be logged to `input_log.txt`.
-
-Stop the program anytime using:
+You will see:
 
 ```
-Ctrl + C
+Keystroke Logger (Safe Version with Timestamp)
+Logs keys only while this window is active.
+Press ESC to stop.
 ```
 
+Every key press will appear in the terminal **and** be stored in `key_log.txt`.
 
-## ⚠️ Ethical Use
+---
 
-This program:
+## 📝 Example Log Output
 
-* Does **NOT** run in the background
-* Does **NOT** capture system-wide keystrokes
-* Does **NOT** store sensitive information
-* Is strictly for **learning purposes**
+```
+--- Logging started at 2025-12-04 20:34:11 ---
+2025-12-04 20:34:15 - h
+2025-12-04 20:34:15 - e
+2025-12-04 20:34:16 - l
+2025-12-04 20:34:16 - l
+2025-12-04 20:34:17 - o
+```
 
-Misuse of keylogging tools can violate privacy laws.
+---
+
+## 🔒 Ethics & Disclaimer
+
+This project is intended **strictly for educational purposes**.
+Do **not** use it to collect keystrokes without explicit permission.
+Unauthorized keylogging is illegal and unethical.
 
 ---
