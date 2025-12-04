@@ -1,5 +1,5 @@
 # SCT_CT_4
-keylogger
+RECORD keylogger && keystrokes
 
 
 #  Keyboard Input Logger (Educational Use Only)
