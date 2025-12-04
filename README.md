@@ -76,6 +76,3 @@ This program:
 Misuse of keylogging tools can violate privacy laws.
 
 ---
-
-
-Just tell me!
